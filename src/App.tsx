@@ -5,11 +5,11 @@ import Arrow from './assets/Arrow'
 
 function App() {
   const [isPressed, setIsPressed] = useState(false);
-  const [points, setPoints] = useState(42857775);
-  const [energy, setEnergy] = useState(2532);
+  const [points, setPoints] = useState(1);
+  const [energy, setEnergy] = useState(1);
   const [clicks, setClicks] = useState<{ id: number, x: number, y: number }[]>([]);
-  const pointsToAdd = 12;
-  const energyToReduce = 12;
+  const pointsToAdd = 10;
+  const energyToReduce = 10;
 
 
   const handleMouseDown = () => setIsPressed(true);
@@ -107,7 +107,7 @@ function App() {
             </div>
           </div>
           <div className="w-full bg-[#f9c035] rounded-full mt-4">
-            <div className="bg-gradient-to-r from-[#f3c45a] to-[#fffad0] h-4 rounded-full" style={{ width: `${(energy / 6500) * 100}%` }}></div>
+            <div className="bg-gradient-to-r from-[#19dc9e] to-[#fffad0] h-4 rounded-full" style={{ width: `${(energy / 6500) * 100}%` }}></div>
           </div>
         </div>
 
